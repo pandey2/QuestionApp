@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e7"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="48dp"
+            android:background="#13b586"
+            android:orientation="horizontal"
+            android:layout_alignParentTop="true">
+
+
+
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Questions"
+                android:textColor="#ffffff"
+                android:layout_marginLeft="25dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+
+                android:layout_gravity="center_horizontal|center_vertical"/>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="30dp"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+
+            android:weightSum="1">
+            <EditText android:layout_width="fill_parent"
+                android:layout_height="200dp"
+                android:hint="Enter question here"
+                android:background="#f3f3f3"
+                android:textColor="#040404"
+                android:paddingLeft="5dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/question"
+                android:layout_weight="0.55" />
+
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:id="@+id/op1"
+                android:background="#f3f3f3"
+                android:hint="Option1"
+                android:layout_marginTop="11dp"
+                android:textColor="#030303" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:id="@+id/op2"
+                android:background="#f3f3f3"
+                android:hint="Option2"
+                android:layout_marginTop="11dp"
+                android:textColor="#030303" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:id="@+id/op3"
+                android:background="#f3f3f3"
+                android:hint="Option3"
+                android:layout_marginTop="11dp"
+                android:textColor="#030303" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:id="@+id/op4"
+                android:background="#f3f3f3"
+                android:hint="Option4"
+                android:layout_marginTop="11dp"
+                android:textColor="#030303" />
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:ems="10"
+                android:id="@+id/ans"
+                android:background="#f3f3f3"
+                android:hint="Answer"
+                android:layout_marginTop="11dp"
+                android:textColor="#030303" />
+
+            <LinearLayout
+                android:layout_marginTop="10dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal"
+                >
+
+
+            </LinearLayout>
+            <Button android:layout_width="190dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="16dp"
+                android:text="Add This Question"
+                android:onClick="addData"
+                android:textColor="#fff"
+                android:textSize="13dp"
+                android:background="#13b586"
+                android:id="@+id/add" />
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+</ScrollView>
